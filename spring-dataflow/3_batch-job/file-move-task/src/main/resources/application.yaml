@@ -1,0 +1,26 @@
+#logging.level.org.springframework.cloud.task: debug
+spring.application.name: File Move Task
+spring.cloud.task.closecontext_enabled: true
+spring.main.banner-mode: off
+
+#SFTP Configuration
+sftp.remoteDir: /opt/
+sftp.username: 
+sftp.password: 
+sftp.serverhost: 
+
+logging.path: 'logs'
+logging.file:  file-move-task.log
+logging.config: 'classpath:logback-spring.xml'
+
+routes:
+  - name: input-file-move
+    action: mv
+    active: true
+    medium: fat
+    source_dir: C:/sandeep/code/source/others/spring-dataflow/0_data/output/
+    scan_ext: '.*\.xml'
+    scan_ext_associated_file: '.xml'
+    target_dir: C:/sandeep/code/source/others/spring-dataflow/0_data/remote_target/
+    date_path: yyyy-MM-dd
+    target_folder: .
