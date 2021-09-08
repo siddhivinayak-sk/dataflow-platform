@@ -1,0 +1,12 @@
+#logging.level.org.springframework.cloud.task: debug
+spring.application.name: File Import Task
+spring.cloud.task.closecontext_enabled: true
+spring.main.banner-mode: off
+
+logging.path: 'logs'
+logging.file:  file-move-task.log
+logging.config: 'classpath:logback-spring.xml'
+
+input.file.path: C:/sandeep/code/source/others/spring-dataflow/0_data/source/input.csv
+processed.file.path: C:/sandeep/code/source/others/spring-dataflow/0_data/processed
+output.file.path: C:/sandeep/code/source/others/spring-dataflow/0_data/output/output.xml

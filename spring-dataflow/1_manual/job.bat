@@ -1,0 +1,2 @@
+java -jar -Dspring.config.additional-location=C:\sandeep\code\source\others\spring-dataflow\1_manual\file-import-task.yaml C:\sandeep\code\source\others\spring-dataflow\1_manual\file-import-task-v0.0.1.jar
+java -jar -Dspring.config.additional-location=C:\sandeep\code\source\others\spring-dataflow\1_manual\file-move-task.yaml C:\sandeep\code\source\others\spring-dataflow\1_manual\file-move-task-v0.0.1.jar
