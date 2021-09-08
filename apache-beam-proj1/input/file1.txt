@@ -1,0 +1,7 @@
+With Apache Beam, we can construct workflow graphs (pipelines) and execute them. The key concepts in the programming model are:
+
+PCollection – represents a data set which can be a fixed batch or a stream of data
+PTransform – a data processing operation that takes one or more PCollections and outputs zero or more PCollections
+Pipeline – represents a directed acyclic graph of PCollection and PTransform, and hence, encapsulates the entire data processing job
+PipelineRunner – executes a Pipeline on a specified distributed processing backend
+Simply put, a PipelineRunner executes a Pipeline, and a Pipeline consists of PCollection and PTransform.

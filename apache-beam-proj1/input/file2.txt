@@ -1,0 +1,9 @@
+Apache Beam is designed to provide a portable programming layer. In fact, the Beam Pipeline Runners translate the data processing pipeline into the API compatible with the backend of the user's choice. Currently, these distributed processing backends are supported:
+
+Apache Apex
+Apache Flink
+Apache Gearpump (incubating)
+Apache Samza
+Apache Spark
+Google Cloud Dataflow
+Hazelcast Jet

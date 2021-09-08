@@ -1,0 +1,1 @@
+mvn archetype:generate -DgroupId=myprocessor -DartifactId=csvtoxml -DarchetypeGroupId=org.apache.nifi -DarchetypeArtifactId=nifi-processor-bundle-archetype -DarchetypeVersion=1.14.0 -DinteractiveMode=true
